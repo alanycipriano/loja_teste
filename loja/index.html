@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentcar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+    <script src="index.js"></script>
+</head>
+<body class="">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+        <div class="container">
+            <a href="" class="navbar-brand">LOGO</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link btn btn-dark">
+                            Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="viaturas_aluguel.html" class="nav-link btn btn-dark">
+                            Viaturas em aluguel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-dark">
+                            Viaturas a venda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-dark">
+                            Promoções
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-dark">
+                            Outros
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-dark nav-link text-light" data-bs-toggle="dropdown" aria-expanded="false">
+                            Carrinho
+                            <i class="bi bi-cart "></i>
+                            <span class="badge rounded-pill bg-secondary" id="carrinho-total-items">0</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end p-2"  style="min-width: 900px;;" id="dropdown">
+                            <div id="dropdown-menu">
+                                <div class="row" id="dropdown-header">
+                                    <div class="col-lg-3  fw-bold">
+                                        Nome
+                                    </div>
+                                    <div class="col-lg-3  fw-bold">
+                                        Imagem
+                                    </div>
+                                    <div class="col-lg-2  fw-bold">
+                                        Preço unitário
+                                    </div>
+                                    <div class="col-lg-2  fw-bold">
+                                        Dias
+                                    </div>
+                                    <div class="col-lg-2  fw-bold">
+                                        Preço Total
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-warning d-grid w-100">
+                                    <i class="bi bi-cash" style="font-style: normal;">  Concluir</i>
+                                </button>
+        
+                            </div>
+                        </ul>
+    
+                    </li>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Bem vindo-->
+    <section class="container-fluid bg-secondary benvindo-section ps-5 pt-2"> 
+        <div class="row">
+            <p class="text-info display-5 fw-bold">ALUGUEL E COMPRA DE VIATURAS</p>
+            <div class="col-6 text-light" style="font-size: 18pt;">
+                <p>
+                    A <span class="badge rounded-pill bg-info text-dark">Rentcar</span> disponibiliza-lhe a melhor selecção de veículos. Todas as viaturas se caracterizam pelos seus elevados padrões de segurança.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Bem vindo-->
+     <!-- Estatisticas e pesquisa-->
+     <div class="mx-auto w-75 bg-light text-center d-flex mt-3 mb-5 shadow" style="border-radius: 9px;">
+         <div class="border-end w-25 my-3 mx-2">
+             <span class="fw-bold display-6">25</span>
+             <p> Viaturas disponíveis </p>
+        </div>
+        <div class="input-group h-25 w-50 mx-auto mt-5">
+            <input type="text" name="" id="" placeholder="Pesquisar" class="form-control">
+            <button type="button" class="btn btn-info">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Fim Estatisticas e pesquisa-->
+     <div class="border-top w-100 "></div>
+    <!-- Viaturas em aluguel-->
+    <section class="container-fluid ps-5">
+        <h3 class="text-center my-3 display-6">Viaturas em aluguel</h3>
+        
+        <!-- Row com filtros a esquerda e viaturas a direita -->
+        <div class="row">
+            <!--Col filtrar-->
+            <div class="col-3">
+                <h4 class="">Filtrar</h4>
+                <!--Marcas-->
+                <div class="">
+                    <h5>Marcas</h5>
+                    <div class=" d-grid bg-light">
+                        <div class="" data-toggle="buttons">
+                            <label for="" class="btn">
+                                <input type="checkbox" name="" id="" class="" value="">
+                                <span class="text-muted">(2) </span>Marca 1
+                            </label>
+                        </div>
+                        <div class="" data-toggle="buttons">
+                            <label for="" class="btn">
+                                <input type="checkbox" name="" id="" class="" value="">
+                                <span class="text-muted">(3) </span>Marca 2
+                            </label>
+                        </div>
+                        <div class="" data-toggle="buttons">
+                            <label for="" class="btn">
+                                <input type="checkbox" name="" id="" class="" value="">
+                                <span class="text-muted">(12) </span>Marca 3
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim Marcas-->
+                <!--Combustível-->
+                <div class="">
+                    <h5>Combustível</h5>
+                    <div class=" d-grid bg-light">
+                        <div class="" data-toggle="buttons">
+                            <label for="" class="btn">
+                                <input type="checkbox" name="" id="" class="" value="">
+                                Gasolina
+                            </label>
+                        </div>
+                        <div class="" data-toggle="buttons">
+                            <label for="" class="btn">
+                                <input type="checkbox" name="" id="" class="" value="">
+                                Diesel
+                            </label>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Fim Combustíveis-->
+                <!--Transmissão-->
+                <div class="">
+                    <h5>Transmissão</h5>
+                    <div class=" d-grid bg-light">
+                        <div class="" data-toggle="buttons">
+                            <label for="" class="btn">
+                                <input type="checkbox" name="" id="" class="" value="">
+                                Manual
+                            </label>
+                        </div>
+                        <div class="" data-toggle="buttons">
+                            <label for="" class="btn">
+                                <input type="checkbox" name="" id="" class="" value="">
+                                Automatica
+                            </label>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Fim Transmissão-->
+                <!--Ocupantes-->
+                <div class="">
+                    <h5>Ocupantes</h5>
+                    <div class=" d-grid bg-light">
+                        <select name="" id="" class="form-select my-2">
+                            <option value="5">De 1 a 5 ocupantes</option>
+                            <option value="5">De 6 a 10 ocupantes</option>
+                            <option value="5">Mais de 10 ocupantes</option>
+                        </select>
+                    </div>
+                </div>
+                <!--Fim Ocupantes-->
+            </div>
+            <!-- Fim Col filtrar-->
+
+            <!-- Row | col com viaturas -->
+            <div class="row col-9">
+                <div class="card shadow-lg col-4 hover">
+                    <a href="">
+                        <img src="img/img-1.png" alt="" id="carro-img-1" class="mt-5 mx-auto d-block img-fluid">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title text-center" id="carro-nome-1">
+                            Mitsubish Nucequê
+                        </h3>
+                        <p class="card-text text-center">
+                            <span class=" ">Preço:</span>
+                            <span class="text-primary" id="carro-preco-1"> 
+                                <script> document.write( formataMoeda(190000))</script> 
+                            </span> 
+                            <span class="text-muted">/ dia</span>
+                        </p>
+                        <button class="btn  btn-success w-100 my-2 add-carrinho" id="carro-add-carrinho-1">
+                            <i class="bi bi-cart-plus" style="font-style: normal;"> Reservar</i>
+                        </button>
+                    </div>
+                    <div class="card-foote py-1 d-flex text-center">
+                        <div class="bg-warning card-footer-item w-25 pt-2">
+                            <img src="img/mitsubishi_32px.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="bg-secondary card-footer-item w-25">
+                            <i class="bi bi-5-circle-fill" style="font-size: 30px;"></i>
+                            <span class="text-light fw-bold" style="font-size: 12px;">Ocupantes</span>  
+                        </div>
+                        <div class="bg-light card-footer-item w-50 pt-2 text-center">
+                            <a href="" class="nav-link">
+                                Saber mais 
+                                <img src="img/chevron_right_24px.png" alt="" class="img-fluid">
+                            </a>                           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Fim Row com filtros a esquerda e viaturas a direita -->
+    </section>
+    <!-- FIm Viaturas em aluguel-->
+
+    <footer class="container-fluid mt-5 text-light">
+        <h5 class="pt-2">Siga-nos nas Redes Sociais:</h5>
+        <ul class="list-unistyled">
+            <li> <i class="bi bi-facebook"></i> Facebook </li>
+            <li> <i class="bi bi-whatsapp"></i> Whatsapp</li>
+            <li> <i class="bi bi-twitter"></i> Twitter</li>
+            <li> <i class="bi bi-tiktok"></i> Tiktok</li>
+        </ul>
+        <p class="text-center">
+            Todos os direitos reservados. <br>
+            <script> 
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

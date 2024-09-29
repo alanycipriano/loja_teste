@@ -1,0 +1,9 @@
+.benvindo-section{
+    background-image: url("img/bg-top.png");
+}
+.card-footer-item{
+    height: 70px;
+}
+footer{
+    background: linear-gradient(180deg, rgb(16, 16, 16) 0%, rgb(130, 136, 139) 100%);
+}
